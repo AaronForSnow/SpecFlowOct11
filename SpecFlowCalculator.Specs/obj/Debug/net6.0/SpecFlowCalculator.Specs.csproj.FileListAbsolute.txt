@@ -111,3 +111,5 @@ C:\Users\utaar\source\repos\SpecFlowCalculator\SpecFlowCalculator.Specs\obj\Debu
 C:\Users\utaar\source\repos\SpecFlowCalculator\SpecFlowCalculator.Specs\obj\Debug\net6.0\SpecFlowCalculator.Specs.pdb
 C:\Users\utaar\source\repos\SpecFlowCalculator\SpecFlowCalculator.Specs\obj\Debug\net6.0\SpecFlowCalculator.Specs.genruntimeconfig.cache
 C:\Users\utaar\source\repos\SpecFlowCalculator\SpecFlowCalculator.Specs\obj\Debug\net6.0\ref\SpecFlowCalculator.Specs.dll
+C:\Users\utaar\source\repos\SpecFlowCalculator\SpecFlowCalculator.Specs\bin\Debug\net6.0\SpecFlowCalculator.dll
+C:\Users\utaar\source\repos\SpecFlowCalculator\SpecFlowCalculator.Specs\bin\Debug\net6.0\SpecFlowCalculator.pdb

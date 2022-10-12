@@ -1827,6 +1827,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "SpecFlowCalculator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SpecFlowCalculator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpecFlowCalculator.dll": {}
+        }
       }
     }
   },
@@ -6344,6 +6354,11 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "SpecFlowCalculator/1.0.0": {
+      "type": "project",
+      "path": "../SpecFlowCalculator/SpecFlowCalculator.csproj",
+      "msbuildProject": "../SpecFlowCalculator/SpecFlowCalculator.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6353,6 +6368,7 @@
       "NUnit3TestAdapter >= 4.1.0",
       "SpecFlow.NUnit >= 3.9.40",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
+      "SpecFlowCalculator >= 1.0.0",
       "nunit >= 3.13.2"
     ]
   },
@@ -6388,7 +6404,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\utaar\\source\\repos\\SpecFlowCalculator\\SpecFlowCalculator\\SpecFlowCalculator.csproj": {
+              "projectPath": "C:\\Users\\utaar\\source\\repos\\SpecFlowCalculator\\SpecFlowCalculator\\SpecFlowCalculator.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
