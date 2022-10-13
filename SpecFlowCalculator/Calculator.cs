@@ -27,5 +27,20 @@ namespace SpecFlowCalculator
             FirstNumber += number;
         }
 
+        public void Divide(int number)
+        {
+            FirstNumber /= number;
+        }
+
+        public void Minus(int number)
+        {
+            FirstNumber -= number;
+        }
+
+        public void Mod(int number)
+        {
+            FirstNumber %= number;
+        }
+
     }
 }

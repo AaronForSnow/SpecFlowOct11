@@ -39,10 +39,17 @@ namespace SpecFlowCalculator.Specs.StepDefinitions
             _result = _calculator.Mult();
         }
 
-        [When("operation + is done to the number (.*)")]
+        [When(@"operation \+ is done to the number (.*)")]
         public void OperationPlusIsDoneToTheNumber(int number)
         {
             _calculator.Plus(number);
+            _result = _calculator.FirstNumber;
+        }
+
+        [When(@"operation / is done to the number (.*)")]
+        public void OperationDivideIsDoneToTheNumber(int number)
+        {
+            _calculator.Divide(number);
             _result = _calculator.FirstNumber;
         }
 
@@ -50,6 +57,20 @@ namespace SpecFlowCalculator.Specs.StepDefinitions
         public void ThenTheResultShouldBe(int result)
         {
             _result.Should().Be(result);
+        }
+
+        [When(@"operation \- is done to the number (.*)")]
+        public void OperationMinusIsDoneToTheNumber(int number)
+        {
+            _calculator.Minus(number);
+            _result = _calculator.FirstNumber;
+        }
+
+        [When(@"operation % is done to the number (.*)")]
+        public void OperationModIsDoneToTheNumber(int number)
+        {
+            _calculator.Mod(number);
+            _result = _calculator.FirstNumber;
         }
     }
 }
