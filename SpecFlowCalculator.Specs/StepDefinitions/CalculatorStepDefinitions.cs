@@ -1,3 +1,4 @@
+using System.Security.Policy;
 using FluentAssertions;
 
 namespace SpecFlowCalculator.Specs.StepDefinitions
@@ -24,6 +25,25 @@ namespace SpecFlowCalculator.Specs.StepDefinitions
         public void WhenTheTwoNumbersAreAdded()
         {
             _result = _calculator.Add();
+        }
+
+        [When("the two numbers are subtracted")]
+        public void WhenTheTwoNumbersAreSubtracted()
+        {
+            _result = _calculator.Subtract();
+        }
+
+        [When("the two numbers are multiplied")]
+        public void WhenTheTwoNumbersAreMultiplied()
+        {
+            _result = _calculator.Mult();
+        }
+
+        [When("operation + is done to the number (.*)")]
+        public void OperationPlusIsDoneToTheNumber(int number)
+        {
+            _calculator.Plus(number);
+            _result = _calculator.FirstNumber;
         }
 
         [Then("the result should be (.*)")]

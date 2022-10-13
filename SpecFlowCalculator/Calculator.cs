@@ -11,5 +11,21 @@ namespace SpecFlowCalculator
         {
             return FirstNumber + SecondNumber;
         }
+
+        public int Subtract()
+        {
+            return FirstNumber - SecondNumber;
+        }
+
+        public int Mult()
+        {
+            return FirstNumber * SecondNumber;
+        }
+
+        public void Plus(int number)
+        {
+            FirstNumber += number;
+        }
+
     }
 }
